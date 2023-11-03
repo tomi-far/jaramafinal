@@ -245,19 +245,19 @@
     font-size: 1rem;
 }
 @media (min-width: 0px) {.ja_contacto_datosymapa iframe{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }}
 @media (min-width: 480px) {.ja_contacto_datosymapa iframe{
     width: 380px;
     height: 380px;
 }}
 @media (min-width: 768px) {.ja_contacto_datosymapa iframe{
-    width: 500px;
+    width: 600px;
     height: 500px;
 }}
 @media (min-width: 992px) {.ja_contacto_datosymapa iframe{
-    width: 700px;
+    width: 800px;
     height: 500px;
 }}
 .ja_contacto_form{
