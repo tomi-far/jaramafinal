@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarama Cosmética Automotor</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imgs/imglogos/jaramablack_mini.jpeg">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/header.js"></script>
+</head>
+<body>
+    
+    <!----------------------------------------HEADER---------------------------------------->
+
+    <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./imgs/imglogos/jaramawhite.jpg" alt="Logo Jarama"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-1" id="navbarSupportedContent">
+            <div class="container-fluid ">
+              <ul class="navbar-nav mb-lg-0 justify-content-center">
+                  <li class="nav-item mx-4">
+                      <a class="nav-link ja_text_header" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown mx-4">
+                    <a class="nav-link dropdown-toggle ja_text_header" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                    <ul class="dropdown-menu ja_header_dropdown">
+                      <li><a class="dropdown-item" href="catalogo.html#cosmetica">Línea cosmética</a></li>
+                      <li><a class="dropdown-item" href="catalogo.html#desodorante">Línea desodorantes</a></li>
+                      <li><a class="dropdown-item" href="catalogo.html#lubricante">Línea lubricantes</a></li>
+                      <li><a class="dropdown-item" href="catalogo.html#desengrasante">Línea desengrasantes</a></li>
+                      <li><a class="dropdown-item" href="catalogo.html#mantenimiento">Línea mantenimiento</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="catalogo.html">Ver catálogo completo</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item mx-4">
+                      <a class="nav-link ja_text_header" href="quienessomos.html">Quiénes somos</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link ja_text_header" href="contacto.html">Contacto</a>
+                </li>
+                </div>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    </header>
+
+
+    <!----------------------------------------CONTACTO---------------------------------------->
+    <div class="ja_contacto_portada" id="inicio">
+        <div class="container">
+          <div class="row">
+            <p>Contactate con nosotros</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="container ja_contacto_datosymapa">
+        <p style="text-align: center;padding-bottom: 2rem;"><b>Su satisfacción es nuestra prioridad. Contamos con un equipo ágil para asesorarlo en todas sus inquietudes.</b></p>
+        <div>
+          <h1>Nuestra ubicación</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.5871925107367!2d-60.88585596411584!3d-32.85618005171755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b648e7550bf4cb%3A0x58c1f1d1bdd0f0a7!2sJarama%20Cosm%C3%A9tica%20Automotor%20Srl!5e0!3m2!1ses!2sar!4v1697830044757!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="ja_contacto_form">
+        <h1>Formulario de contacto</h1>
+        <form action="https://formsubmit.co/info@jarama.com.ar" method="post">
+            <label for="nombre" class="form-label">Nombre y apellido*</label>
+            <input type="text" name="Nombre" placeholder="Inserte su nombre y apellido..." class="form-control" id="nombre_input" required>
+            <br>
+            <label for="correo" class="form-label">Correo electrónico*</label>
+            <div class="input-group mb-3">
+            <input type="text" name="Correo" class="form-control" placeholder="usuario" aria-label="Username" required>
+            <span class="input-group-text">@</span>
+            <input type="text" name="Dominio" class="form-control" placeholder="ejemplo.com" aria-label="Server" required>
+            </div>
+            <br>
+            <label for="telefono" class="form-label">Número de teléfono*</label>
+            <input type="text" name="Telefono" placeholder="Inserte su número de teléfono..." class="form-control" id="telefono_input" required>
+            <br>
+            <label for="ubicacion" class="form-label">Localidad y provincia*</label>
+            <input type="text" name="Ubicacion" placeholder="Inserte su localidad y provincia..." class="form-control" id="ubicacion_input" required>
+            <br>
+            <label for="razon_contacto" class="form-label">¿Por qué contactarnos?*</label>
+            <select name="Razon" class="form-select" id="razones" required>
+                <option value="Seleccione">Seleccione una opción...</option>
+                <option value="Soy Cliente">Soy cliente</option>
+                <option value="Quiero ser cliente">Quiero ser cliente</option>
+                <option value="Soy proveedor">Soy proveedor</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <br>
+            <label for="consulta" class="form-label">Mensaje*</label> <br>
+            <textarea name="Consulta" placeholder="Deje su consulta aquí..." id="consultas" cols="30" rows="5" class="form-control" required></textarea>
+            <br>
+            <p class="ja_contacto_final">Los campos con * deben ser completados.</p>
+            <p class="ja_contacto_final">Al enviar, será redirigido a un mensaje de confirmación.</p>
+            <button type="submit" class="btn ja_contacto_btn">Enviar</button>
+            <button type="reset" class="btn ja_contacto_btn">Limpiar</button>
+    </div>
+
+    <!----------------------------------------FOOTER---------------------------------------->
+
+    <div class="ja_footer_box"><div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 border-top border-bottom ja_footer">
+      <div class="col mb-3">  
+       <img class="img-fluid" src="./imgs/imglogos/jaramablack.jpeg" alt="Logo de Jarama" width="100">
+       <p><br>Parque Industrial Roldán<br>Ruta Nacional AO12 - km 47,5<br>Roldán, Santa Fe, Argentina</p>
+      </div>
+      <div class="col mb-3"></div>
+      <div class="col mb-3">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="index.html" class="nav-link link-light p-0 ja_footer_a">Inicio</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="catalogo.html" class="nav-link p-0 link-light ja_footer_a">Catálogo</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="quienessomos.html" class="nav-link p-0 link-light ja_footer_a">Quiénes somos</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="contacto.html" class="nav-link p-0 link-light ja_footer_a">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col mb-3">
+        <h5>Contacto</h5>
+        <h6>Teléfono</h6>
+        <p>(+54) 341 527-0335</p>
+        <h6>E-mail</h6>
+        <p>info@jarama.com.ar</p>
+        <h6 class="mb-3">¡Seguinos en nuestras redes!</h6>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" target="blank" href="https://www.facebook.com/Jaramacosmeticaautomotor/"><img class="ja_img_footer" src="./imgs/imgredes/facebook.png" alt=""></a></li>
+          <li class="ms-3"><a class="link-dark" target="blank" href="https://www.instagram.com/jarama_oficial/"><img class="ja_img_footer" src="./imgs/imgredes/instagram.png" alt=""></a></li>
+          <li class="ms-3"><a class="link-dark" target="blank" href="https://wa.me/message/X7VCMZNQBTDKF1"><img class="ja_img_footer" src="./imgs/imgredes/whatsapp.png" alt=""></a></li>
+        </ul>
+      </div>
+    </footer>
+    </div></div>
+    <div class="ja_copyright">
+  <div class="container">
+  © 2023. Todos los derechos reservados.
+    </div></div>
+
+</body>
+</html>
