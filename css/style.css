@@ -125,8 +125,8 @@
     transition: all 250ms;
 }
 .ja_index_cat_button a:hover{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     transition: all 500ms;
 }
 .ja_carousel_container{
