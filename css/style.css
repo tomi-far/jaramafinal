@@ -91,6 +91,59 @@
     -o-transition: all 500ms;
     transition: all 500ms;
 }
+.ja_portada{
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+    border-color: rgb(227, 28, 20);
+}
+.ja_index_cat_title{
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue','Segoe UI','Arial', sans-serif;
+    font-size: 2.5rem;
+}
+.ja_index_cat_text{
+    color: white;
+    font-family:'Noto','Segoe UI','Arial', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+.ja_index_cat_button{
+    text-align: center;
+    font-family: 'Bebas Neue','Segoe UI','Arial', sans-serif;
+}
+.ja_index_cat_button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    transition: all 250ms;
+}
+.ja_index_cat_button a:hover{
+    color: white;
+    background-color: black;
+    transition: all 500ms;
+}
+.ja_carousel_container{
+    background-color: black;
+    /*background-color: rgb(35,31,32);*/
+}
+.ja_carousel{
+    display: block;
+    margin: 0 auto;
+    width: 77%;
+}
+.ja_carousel_button{
+    width: 5px !important; 
+    height: 5px !important; 
+    border-radius: 100%;
+    background-color: black !important;
+}
 /**********************************************CATALOGO.HTML**********************************************/
 .ja_cat_portada{
     background-image: url(../imgs/imgcatalogo/background_catalogo.jpg);
@@ -247,10 +300,12 @@
 @media (min-width: 0px) {.ja_contacto_datosymapa iframe{
     width: 300px;
     height: 300px;
+    /*margin-left: 18%;*/
 }}
 @media (min-width: 480px) {.ja_contacto_datosymapa iframe{
     width: 380px;
     height: 380px;
+    /*margin-left: 18%;*/
 }}
 @media (min-width: 768px) {.ja_contacto_datosymapa iframe{
     width: 600px;
@@ -259,6 +314,7 @@
 @media (min-width: 992px) {.ja_contacto_datosymapa iframe{
     width: 800px;
     height: 500px;
+    /*margin-left: 18%;*/
 }}
 .ja_contacto_form{
     padding-top: 2rem;
