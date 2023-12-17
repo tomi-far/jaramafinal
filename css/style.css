@@ -176,8 +176,8 @@
     transition: all 250ms;
 }
 .ja_cat_button a:hover{
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     transition: all 500ms;
 }
 .ja_cat_body h1{
